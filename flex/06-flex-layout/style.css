@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/*
+- colocar links no topo
+- colocar links embaixo
+- tirar bullets
+- ajeitar aparencia dos links
+- centralizar conteudo
+- cor de fundo no footer
+- estilizar botoes
+
+*/
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  margin: 50px;
 }
 
 img {
@@ -16,6 +28,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  width: 130px;
+  height: 30px;
 }
 
 input {
@@ -24,4 +38,40 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links {
+  display: flex;
+  gap: 8px;
+}
+
+.right-links {
+  display: flex;
+  gap: 8px;
+}
+
+.content {
+  text-align: center;
+  padding: 150px 0 300px 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: gray;
 }
